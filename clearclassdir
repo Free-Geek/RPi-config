@@ -1,6 +1,9 @@
 #! /bin/sh
 # /etc/init.d/clearclassdir
 
+# This script clears the /home/pi/class directory
+# every time the Raspberry Pi starts up
+
 ### BEGIN INIT INFO
 # Provides:          clearclassdir
 # Required-Start:    $remote_fs $syslog
@@ -11,9 +14,6 @@
 # Description:       Clears /home/pi/class dir
 ### END INIT INFO
 
-# If you want a command to always run, put it here
-
-# Carry out specific functions when asked to by the system
 case "$1" in
   start)
     echo "Clearing class dir"
